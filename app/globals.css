@@ -48,12 +48,6 @@ img {
 }
 
 
-
-/* #cover {
-  width: 250px;
-  height: 400px;
-} */
-
 .flip-book {
  
   position: relative;
@@ -96,7 +90,7 @@ p {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1099;
   transform: rotateY(180deg);
   backface-visibility: hidden;
   background: #000;
@@ -119,28 +113,48 @@ p {
 }
 
 #p1 {
-  z-index: 3;
+  z-index: 1003;
 }
 
 #p2 {
-  z-index: 2;
+  z-index: 1002;
 }
 
 #p3 {
-  z-index: 1;
+  z-index: 1001;
 }
 
 #c1:checked~.flip-book #p1 {
   transform: rotateY(-180deg);
-  z-index: 1;
+  z-index: 1001;
 }
 
 #c2:checked~.flip-book #p2 {
   transform: rotateY(-180deg);
-  z-index: 2;
+  z-index: 1002;
 }
 
 #c3:checked~.flip-book #p3 {
   transform: rotateY(-180deg);
-  z-index: 3;
+  z-index: 1003;
 }
+
+.btn {
+  @apply p-3 bg-black text-white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
